@@ -1,7 +1,7 @@
 {
   "name": "web3ns",
   "version": "0.0.1",
-  "description": "",
+  "description": "The SDK for interacting with the conflux core web3ns",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

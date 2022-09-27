@@ -13,6 +13,7 @@ import {
     WEB3_CONTROLLER_ABI,
     NAME_WRAPPER_ABI,
     Registry,
+    Web3BaseRegistrar,
 } from './contracts/index'
 
 export interface Web3DomainInitOption {
@@ -25,11 +26,11 @@ export interface Web3DomainInitOption {
     publicResolverAddress?: string;
 }
 
-export class Web3Domain {
+export default class Web3Domain {
     client: Conflux;
     Registry: Registry;
     ReverseRegistrar: Contract;
-    Web3BaseRegistrar: Contract;
+    Web3BaseRegistrar: Web3BaseRegistrar;
     Web3Controller: Contract;
     NameWrapper: Contract;
     PublicResolver: Contract;
