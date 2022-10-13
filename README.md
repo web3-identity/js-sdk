@@ -5,14 +5,14 @@
 To use this SDK, `js-conflux-sdk` is also required.
 
 ```bash
-$ npm install web3ns js-conflux-sdk
+$ npm install @web3identity/web3ns js-conflux-sdk
 ```
 
 ## How to use
 
 ```js
 const { Conflux } = require('js-conflux-sdk');
-const { Web3Domain, namehash } = require('web3ns');
+const { Web3Domain, namehash } = require('@web3identity/web3ns');
 
 const conflux = new Conflux({
     url: 'https://test.confluxrpc.com',
