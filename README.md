@@ -46,6 +46,7 @@ main().catch(console.error);
 
 * namehash
 * labelhash
+* dnsNameNotationDecode
 
 ## Constants
 
