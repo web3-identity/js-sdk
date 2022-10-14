@@ -48,6 +48,16 @@ main().catch(console.error);
 * labelhash
 * dnsNameNotationDecode
 
+### dnsNameNotationDecode
+
+This method is used to decode a DNS name notation string to domain
+
+```js
+const dnsNotation = '\x05hello\x04web3\x00';
+const domain = dnsNameNotationDecode(dnsNotation);
+// hello.web3
+```
+
 ## Constants
 
 * WEB3_NAMEHASH
