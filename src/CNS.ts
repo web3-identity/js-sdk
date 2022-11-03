@@ -14,7 +14,9 @@ export class Name {
     const nh = namehash(this.name);
     const { coinType, encoder } = formatsByCoinType[coinId];
     try {
-      const addr = await (this.web3domain.PublicResolver as any).addr(
+      const resolverAddr=(this.web3domain.Registry as any).resolver(nh)
+      const resolverContract=this.web3domain.getResoverContract(resolverAddr)
+      const addr = await (resolverContract as any).addr(
         nh,
         coinType
       );

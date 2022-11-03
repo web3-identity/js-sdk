@@ -62,4 +62,12 @@ export default class Web3Domain {
             address: option.publicResolverAddress || DEFAULT_PUBLIC_RESOLVER_ADDRESS,
         })
     }
+
+    getResoverContract(address:string){
+        if(!address) return this.PublicResolver
+        return this.client.Contract({
+            abi: PUBLIC_RESOLVER_ABI,
+            address: address,
+        })
+    }
 }
