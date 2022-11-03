@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@web3identity/address-encoder": "^0.2.20",
     "@web3identity/cns-contracts": "^0.1.4",
     "idna-uts46-hx": "^4.0.4",
     "js-conflux-sdk": "^2.1.6"
