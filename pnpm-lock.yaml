@@ -2,13 +2,15 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/node': ^18.7.18
-  '@web3identity/cns-contracts': ^0.1.4
+  '@web3identity/address-encoder': ^0.2.20
+  '@web3identity/cns-contracts': ^0.2.1
   idna-uts46-hx: ^4.0.4
   js-conflux-sdk: ^2.1.6
   typescript: ^4.8.3
 
 dependencies:
-  '@web3identity/cns-contracts': 0.1.4
+  '@web3identity/address-encoder': 0.2.20
+  '@web3identity/cns-contracts': 0.2.1
   idna-uts46-hx: 4.0.4
   js-conflux-sdk: 2.1.6
 
@@ -18,11 +20,11 @@ devDependencies:
 
 packages:
 
-  /@babel/runtime/7.19.4:
-    resolution: {integrity: sha512-EXpLCrk55f+cYqmHsSR+yD/0gAIMxxA9QK9lnQWzhMCvt+YmoBN7Zx94s++Kv0+unHk39vxNO8t+CMA2WSS3wA==}
+  /@babel/runtime/7.20.0:
+    resolution: {integrity: sha512-NDYdls71fTXoU8TZHfbBWg7DiZfNzClcKui/+kyi6ppD2L1qnWW3VV6CjtaBXSUGGhiTWJ6ereOIkUvenif66Q==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      regenerator-runtime: 0.13.9
+      regenerator-runtime: 0.13.10
     dev: false
 
   /@conflux-dev/conflux-address-js/1.3.16:
@@ -75,13 +77,13 @@ packages:
   /@ensdomains/ensjs/2.1.0:
     resolution: {integrity: sha512-GRbGPT8Z/OJMDuxs75U/jUNEC0tbL0aj7/L/QQznGYKm/tiasp+ndLOaoULy9kKJFC0TBByqfFliEHDgoLhyog==}
     dependencies:
-      '@babel/runtime': 7.19.4
+      '@babel/runtime': 7.20.0
       '@ensdomains/address-encoder': 0.1.9
       '@ensdomains/ens': 0.4.5
       '@ensdomains/resolver': 0.2.4
       content-hash: 2.5.2
       eth-ens-namehash: 2.0.8
-      ethers: 5.7.1
+      ethers: 5.7.2
       js-sha3: 0.8.0
     transitivePeerDependencies:
       - bufferutil
@@ -286,8 +288,8 @@ packages:
       '@ethersproject/logger': 5.7.0
     dev: false
 
-  /@ethersproject/providers/5.7.1:
-    resolution: {integrity: sha512-vZveG/DLyo+wk4Ga1yx6jSEHrLPgmTt+dFv0dv8URpVCRf0jVhalps1jq/emN/oXnMRsC7cQgAF32DcXLL7BPQ==}
+  /@ethersproject/providers/5.7.2:
+    resolution: {integrity: sha512-g34EWZ1WWAVgr4aptGlVBF8mhl3VWjv+8hoAnzStu8Ah22VHBsuGzP17eb6xDVRzw895G4W7vvx60lFFur/1Rg==}
     dependencies:
       '@ethersproject/abstract-provider': 5.7.0
       '@ethersproject/abstract-signer': 5.7.0
@@ -467,7 +469,7 @@ packages:
       '@ensdomains/ensjs': 2.1.0
       '@truffle/blockchain-utils': 0.1.4
       '@truffle/contract-schema': 3.4.10
-      '@truffle/debug-utils': 6.0.36
+      '@truffle/debug-utils': 6.0.38
       '@truffle/error': 0.1.1
       '@truffle/interface-adapter': 0.5.23
       bignumber.js: 7.2.1
@@ -516,8 +518,8 @@ packages:
       defer-to-connect: 2.0.1
     dev: false
 
-  /@truffle/abi-utils/0.3.3:
-    resolution: {integrity: sha512-/KpaaPi0daffnwLhFulMtwdQ7YfZZtj24J34kZJi7OQw9x0dSNSskGFTU5SEv9d3fOfHNYqCevsqtv1zek0+zg==}
+  /@truffle/abi-utils/0.3.4:
+    resolution: {integrity: sha512-cgFwIEugsRdh/NnLJ5ZKDeShkRx3dz1tl/XgFxChuvMjJ9ymlIB8ixSIRuIXP0jlvOs0O8rNJWEjEnUdW5G/VQ==}
     dependencies:
       change-case: 3.0.2
       fast-check: 3.1.1
@@ -528,11 +530,11 @@ packages:
     resolution: {integrity: sha512-HegAo5A8UX9vE8dtceBRgCY207gOb9wj54c8mNOOWHcFpkyJz7kZYGo44As6Imh10/0hD2j7vHQ56Jf+uszJ3A==}
     dev: false
 
-  /@truffle/codec/0.14.6:
-    resolution: {integrity: sha512-0jPT2MCVTk+1OzkWj0h1Twyh7nP5VBdfqrFK6XjPJZggqmm0bLWexoRPeTrVlByjaKq7uih6bH8MnnoED1MMxQ==}
+  /@truffle/codec/0.14.8:
+    resolution: {integrity: sha512-UWBV4H7hN16oUAvcDib3fFt0HK3+AfUXibVSM9nCSbvzHUBlBLhsBt74ae7xbJIz8HHjTMgUt4CWKEGDNN+fTQ==}
     dependencies:
-      '@truffle/abi-utils': 0.3.3
-      '@truffle/compile-common': 0.8.1
+      '@truffle/abi-utils': 0.3.4
+      '@truffle/compile-common': 0.9.0
       big.js: 6.2.1
       bn.js: 5.2.1
       cbor: 5.2.0
@@ -545,8 +547,8 @@ packages:
       - supports-color
     dev: false
 
-  /@truffle/compile-common/0.8.1:
-    resolution: {integrity: sha512-7mzzG9Cfrn+fDT5Sqi7B6pccvIIV5w/GM8/56YgnjysbDzy5aZ6mv0fe37ZbcznEVQ35NJjBy+lEr/ozOGXwQA==}
+  /@truffle/compile-common/0.9.0:
+    resolution: {integrity: sha512-kpTTU/7ZlQedH6cemCgrqXL4sUjsWAPj7X4LaqQ+KSna3egNJZ6wrKt2kpSYPpCpLihq2IpcBwWar3dTPZ7a5Q==}
     dependencies:
       '@truffle/error': 0.1.1
       colors: 1.4.0
@@ -561,10 +563,10 @@ packages:
       - supports-color
     dev: false
 
-  /@truffle/debug-utils/6.0.36:
-    resolution: {integrity: sha512-oxqVAJOXLUsSpGK3ez0JLTgPoVUhGrvdkYKIfYVkED10lhCgh0HlJ/AbRkUPUV7KR9SKXK5BCDsTJlVbdqtMXA==}
+  /@truffle/debug-utils/6.0.38:
+    resolution: {integrity: sha512-QwPy/kBJgGAejLbj4Ko+mgFEYGx9yJi3EWMVGqr1mgP63XcTK3QA9i+oBExdQI/ZlvZ16b0aIkjpH+hnfQbGqA==}
     dependencies:
-      '@truffle/codec': 0.14.6
+      '@truffle/codec': 0.14.8
       '@trufflesuite/chromafi': 3.0.0
       bn.js: 5.2.1
       chalk: 2.4.2
@@ -613,7 +615,7 @@ packages:
     resolution: {integrity: sha512-B3xVo+dlKM6nnKTcmm5ZtY/OL8bOAOd2Olee9M1zft65ox50OzjEHW91sDiU9j6cvW8Ejg1/Qkf4xd2kugApUA==}
     dependencies:
       '@types/http-cache-semantics': 4.0.1
-      '@types/keyv': 3.1.4
+      '@types/keyv': 4.2.0
       '@types/node': 18.7.18
       '@types/responselike': 1.0.0
     dev: false
@@ -630,6 +632,13 @@ packages:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
       '@types/node': 18.7.18
+    dev: false
+
+  /@types/keyv/4.2.0:
+    resolution: {integrity: sha512-xoBtGl5R9jeKUhc8ZqeYaRDx04qqJ10yhhXYGmJ4Jr8qKpvMsDQQrNUvF/wUJ4klOtmJeJM+p2Xo3zp9uaC3tw==}
+    deprecated: This is a stub types definition. keyv provides its own type definitions, so you do not need this installed.
+    dependencies:
+      keyv: 4.5.0
     dev: false
 
   /@types/node/12.20.55:
@@ -657,12 +666,29 @@ packages:
       '@types/node': 18.7.18
     dev: false
 
-  /@web3identity/cns-contracts/0.1.4:
-    resolution: {integrity: sha512-rXJEAdwG09hhegrwm3Of3gQc2C0Y6pYcEuPVf0ZUf3YbuNngKGWEQBka9BvT0K1eciGcgzSS4K+6vxJPh3BwvA==}
+  /@web3identity/address-encoder/0.2.20:
+    resolution: {integrity: sha512-4ykdmFPpkQrVRARUuNQ6V9Lxkd2VcgqUOzG8H4U6wJnwc4Nrkrct+krPF8Sgq29Yxm3quCqf4uR8ESrl0RjsRg==}
     dependencies:
-      '@ensdomains/ens-contracts': github.com/ensdomains/ens-contracts/d6ea873c17f1b87895a22bec41164d6975f8c100
+      '@conflux-dev/conflux-address-js': github.com/zctocm/conflux-address-js/63e8154d83617b5c7192a81490c3ee99f301114f
+      bech32: 2.0.0
+      blakejs: 1.2.1
+      bn.js: 4.12.0
+      bs58: 4.0.1
+      crypto-addr-codec: 0.1.7
+      js-crc: 0.2.0
+      js-sha256: 0.9.0
+      js-sha512: 0.8.0
+      nano-base32: 1.0.1
+      ripemd160: 2.0.2
+      sha3: 2.1.4
+    dev: false
+
+  /@web3identity/cns-contracts/0.2.1:
+    resolution: {integrity: sha512-gCjK3eWSxYPhpd13nAZ7+RqQA6GZtz5ZG1PxhglpxtR80ikuSaWsHmofOTL+WC2uAE5L9HgkTbXmJt0gUvvo3A==}
+    dependencies:
+      '@ensdomains/ens-contracts': github.com/ensdomains/ens-contracts/6d952dfa50b27f38c3c3824f0e090ef8936046a2
       '@openzeppelin/contracts': 4.7.3
-      solidity-stringutils: github.com/web3ns/solidity-stringutils/1b0129b9597e469cbbccefd37a8dfbb9ee8603f3
+      solidity-stringutils: github.com/web3-identity/solidity-stringutils/1b0129b9597e469cbbccefd37a8dfbb9ee8603f3
     transitivePeerDependencies:
       - '@nomiclabs/hardhat-web3'
       - bufferutil
@@ -796,6 +822,10 @@ packages:
 
   /bech32/1.1.4:
     resolution: {integrity: sha512-s0IrSOzLlbvX7yp4WBfPITzpAU8sqQcpsmwXDiKwrG4r491vwCO/XpejasRNl0piBMe/DvP4Tz0mIS/X1DPJBQ==}
+    dev: false
+
+  /bech32/2.0.0:
+    resolution: {integrity: sha512-LcknSilhIGatDAsY1ak2I8VtGaHNhgMSYVxFrGLXv+xLHytaKZKcaUJJUE7qmBr7h33o5YQwP55pMI0xmkpJwg==}
     dev: false
 
   /big-integer/1.6.36:
@@ -1752,8 +1782,8 @@ packages:
       xmlhttprequest: 1.8.0
     dev: false
 
-  /ethers/5.7.1:
-    resolution: {integrity: sha512-5krze4dRLITX7FpU8J4WscXqADiKmyeNlylmmDLbS95DaZpBhDe2YSwRQwKXWNyXcox7a3gBgm/MkGXV1O1S/Q==}
+  /ethers/5.7.2:
+    resolution: {integrity: sha512-wswUsmWo1aOK8rR7DIKiWSw9DbLWe6x98Jrn8wcTflTVvaXhAMaB5zGAXy0GYQEQp9iO1iSHWVyARQm11zUtyg==}
     dependencies:
       '@ethersproject/abi': 5.7.0
       '@ethersproject/abstract-provider': 5.7.0
@@ -1773,7 +1803,7 @@ packages:
       '@ethersproject/networks': 5.7.1
       '@ethersproject/pbkdf2': 5.7.0
       '@ethersproject/properties': 5.7.0
-      '@ethersproject/providers': 5.7.1
+      '@ethersproject/providers': 5.7.2
       '@ethersproject/random': 5.7.0
       '@ethersproject/rlp': 5.7.0
       '@ethersproject/sha2': 5.7.0
@@ -2373,13 +2403,18 @@ packages:
       has-tostringtag: 1.0.0
     dev: false
 
+  /is-buffer/2.0.5:
+    resolution: {integrity: sha512-i2R6zNFDwgEHJyQUtJEk0XFi1i0dPFn/oqjK3/vPCcDeJvW5NQ83V8QbicfF1SupOaB0h8ntgBC2YiE7dfyctQ==}
+    engines: {node: '>=4'}
+    dev: false
+
   /is-callable/1.2.7:
     resolution: {integrity: sha512-1BC0BVFhS/p0qtw6enp8e+8OD0UrK0oFLztSjNzhcKA3WDuJxxAPXzPuPtKkjEY9UUoEWlX/8fgKeu2S8i9JTA==}
     engines: {node: '>= 0.4'}
     dev: false
 
-  /is-core-module/2.10.0:
-    resolution: {integrity: sha512-Erxj2n/LDAZ7H8WNJXd9tw38GYM3dv8rk8Zcs+jJuxYTW7sozH+SS8NtrSjVL1/vpLvWi1hxy96IzjJ3EHTJJg==}
+  /is-core-module/2.11.0:
+    resolution: {integrity: sha512-RRjxlvLDkD1YJwDbroBHMb+cukurkDWNyHx7D3oNB5x9rb5ogcksMC5wHCadcXoo67gVr/+3GFySh3134zi6rw==}
     dependencies:
       has: 1.0.3
     dev: false
@@ -2514,12 +2549,24 @@ packages:
       - supports-color
     dev: false
 
+  /js-crc/0.2.0:
+    resolution: {integrity: sha512-8DdCSAOACpF8WDAjyDFBC2rj8OS4HUP9mNZBDfl8jCiPCnJG+2bkuycalxwZh6heFy6PrMvoWTp47lp6gzT65A==}
+    dev: false
+
+  /js-sha256/0.9.0:
+    resolution: {integrity: sha512-sga3MHh9sgQN2+pJ9VYZ+1LPwXOxuBJBA5nrR5/ofPfuiJBE2hnjsaN8se8JznOmGLN2p49Pe5U/ttafcs/apA==}
+    dev: false
+
   /js-sha3/0.5.7:
     resolution: {integrity: sha512-GII20kjaPX0zJ8wzkTbNDYMY7msuZcTWk8S5UOh6806Jq/wz1J8/bnr8uGU0DAUmYDjj2Mr4X1cW8v/GLYnR+g==}
     dev: false
 
   /js-sha3/0.8.0:
     resolution: {integrity: sha512-gF1cRrHhIzNfToc802P800N8PpXS+evLLXfsVpowqmAFR9uwbi89WvXg2QspOmXL8QL86J4T1EpFu+yUkwJY3Q==}
+    dev: false
+
+  /js-sha512/0.8.0:
+    resolution: {integrity: sha512-PWsmefG6Jkodqt+ePTvBZCSMFgN7Clckjd0O7su3I0+BW2QWUTJNzjktHsztGLhncP2h8mcF9V9Y2Ha59pAViQ==}
     dev: false
 
   /jsbi/3.2.5:
@@ -3282,8 +3329,8 @@ packages:
       util-deprecate: 1.0.2
     dev: false
 
-  /regenerator-runtime/0.13.9:
-    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
+  /regenerator-runtime/0.13.10:
+    resolution: {integrity: sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw==}
     dev: false
 
   /regexp.prototype.flags/1.4.3:
@@ -3344,7 +3391,7 @@ packages:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
     hasBin: true
     dependencies:
-      is-core-module: 2.10.0
+      is-core-module: 2.11.0
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
     dev: false
@@ -3921,14 +3968,13 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: false
 
-  /util/0.12.4:
-    resolution: {integrity: sha512-bxZ9qtSlGUWSOy9Qa9Xgk11kSslpuZwaxCg4sNIDj6FLucDab2JxnHwyNTCpHMtK1MjoQiWQ6DiUMZYbSrO+Sw==}
+  /util/0.12.5:
+    resolution: {integrity: sha512-kZf/K6hEIrWHI6XqOFUiiMa+79wE/D8Q+NCNAWclkyg3b4d2k7s0QGepNjiABc+aR3N1PAyHL7p6UcLY6LmrnA==}
     dependencies:
       inherits: 2.0.4
       is-arguments: 1.1.1
       is-generator-function: 1.0.10
       is-typed-array: 1.1.9
-      safe-buffer: 5.2.1
       which-typed-array: 1.1.8
     dev: false
 
@@ -4063,7 +4109,7 @@ packages:
     resolution: {integrity: sha512-IuXdAm65BQtPL4aI6LZJJOrKAs0SM5IK2Cqo2/lMNvVMT9Kssq6qOk68Uf7EBDH0rPuINi+ReLP+uH+0g3AnPA==}
     engines: {node: '>=8.0.0'}
     dependencies:
-      util: 0.12.4
+      util: 0.12.5
       web3-core-helpers: 1.7.4
       web3-providers-http: 1.7.4
       web3-providers-ipc: 1.7.4
@@ -4076,7 +4122,7 @@ packages:
     resolution: {integrity: sha512-2AoYCs3Owl5foWcf4uKPONyqFygSl9T54L8b581U16nsUirjhoTUGK/PBhMDVcLCmW4QQmcY5A8oPFpkQc1TTg==}
     engines: {node: '>=8.0.0'}
     dependencies:
-      util: 0.12.4
+      util: 0.12.5
       web3-core-helpers: 1.8.0
       web3-providers-http: 1.8.0
       web3-providers-ipc: 1.8.0
@@ -4695,8 +4741,8 @@ packages:
       yargs-parser: 2.4.1
     dev: false
 
-  github.com/ensdomains/ens-contracts/d6ea873c17f1b87895a22bec41164d6975f8c100:
-    resolution: {commit: d6ea873c17f1b87895a22bec41164d6975f8c100, repo: git+ssh://git@github.com/ensdomains/ens-contracts.git, type: git}
+  github.com/ensdomains/ens-contracts/6d952dfa50b27f38c3c3824f0e090ef8936046a2:
+    resolution: {commit: 6d952dfa50b27f38c3c3824f0e090ef8936046a2, repo: git+ssh://git@github.com/ensdomains/ens-contracts.git, type: git}
     name: '@ensdomains/ens-contracts'
     version: 0.0.13
     dependencies:
@@ -4718,8 +4764,17 @@ packages:
       - web3-utils
     dev: false
 
-  github.com/web3ns/solidity-stringutils/1b0129b9597e469cbbccefd37a8dfbb9ee8603f3:
-    resolution: {commit: 1b0129b9597e469cbbccefd37a8dfbb9ee8603f3, repo: git+ssh://git@github.com/web3ns/solidity-stringutils.git, type: git}
+  github.com/web3-identity/solidity-stringutils/1b0129b9597e469cbbccefd37a8dfbb9ee8603f3:
+    resolution: {tarball: https://codeload.github.com/web3-identity/solidity-stringutils/tar.gz/1b0129b9597e469cbbccefd37a8dfbb9ee8603f3}
     name: solidity-stringutils
     version: 1.0.0
+    dev: false
+
+  github.com/zctocm/conflux-address-js/63e8154d83617b5c7192a81490c3ee99f301114f:
+    resolution: {commit: 63e8154d83617b5c7192a81490c3ee99f301114f, repo: git+ssh://git@github.com/zctocm/conflux-address-js.git, type: git}
+    name: '@conflux-dev/conflux-address-js'
+    version: 1.3.16
+    dependencies:
+      is-buffer: 2.0.5
+      jsbi: 3.2.5
     dev: false
