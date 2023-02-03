@@ -1,6 +1,6 @@
 {
   "name": "@web3identity/web3ns",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "The SDK for interacting with the conflux core web3ns",
   "main": "dist/index.js",
   "scripts": {
