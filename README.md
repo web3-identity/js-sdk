@@ -26,7 +26,7 @@ const web3domain = new Web3Domain({
 });
 
 async function main() {
-    const owner = await web3domain.Registry.ownerOf(namehash('conflux.web3'));
+    const owner = await web3domain.Registry.owner(namehash('conflux.web3'));
     console.log(`Owner of ${'conflux.web3'} is : ${owner}`);
 }
 
