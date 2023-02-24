@@ -1,10 +1,10 @@
 // NOTE: should use hex address here
-export const DEFAULT_REGISTRY_ADDRESS = 'cfxtest:achg113s8916v2u756tvf6hdvmbsb73b16ykt1pvwm';
-export const DEFAULT_PUBLIC_RESOLVER_ADDRESS = 'cfxtest:acahw54guhthk9778mxxk5jkn1pjfzbuz6xs73hcb4';
-export const DEFAULT_REVERSE_REGISTRAR_ADDRESS = 'cfxtest:ach1p03gkptxz07p4ecn66gjpd0xrnkkbj1n6p96d5';
-export const DEFAULT_BASE_REGISTRAR_ADDRESS = 'cfxtest:acc1ttg7287cybsdy6bn0002nzepypn29yavjbj36g';
-export const DEFAULT_WEB3_CONTROLLER_ADDRESS = 'cfxtest:acbrnwph2609zbf21np0501d87xb9dnvuakpv911xk';
-export const DEFAULT_NAME_WRAPPER_ADDRESS = 'cfxtest:acdc4xzy0pg1dzrbajgmv8nw3cjyj6ezn2dzncc4w5';
+export const DEFAULT_REGISTRY_ADDRESS = '0x88a6c3a585e1e0b5f45e4ed78097ea4221e983fc';
+export const DEFAULT_PUBLIC_RESOLVER_ADDRESS = '0x825a179fa826086c18ccaf619a8d506c76d74cfb';
+export const DEFAULT_REVERSE_REGISTRAR_ADDRESS = '0x8a06b2a43adec692cf39bd3e8d960225a53b38f3';
+export const DEFAULT_BASE_REGISTRAR_ADDRESS = '0x8d6f06086592a74197aa6f717d401f6a3e735e25';
+export const DEFAULT_WEB3_CONTROLLER_ADDRESS = '0x817f6fd4d83e55d27f6cc7717d2b6eefd10ec4e0';
+export const DEFAULT_NAME_WRAPPER_ADDRESS = '0x80c166984740f5132104a2024efe3bb3c7af5684';
 
 export { REGISTRY_ABI, Registry } from './Registry';
 export { PUBLIC_RESOLVER_ABI } from './PublicResolver';
