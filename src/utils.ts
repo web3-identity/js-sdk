@@ -30,19 +30,21 @@ function normalize(name: string) {
 // @see http://www.tcpipguide.com/free/t_DNSNameNotationandMessageCompressionTechnique.htm#:~:text=Instead,%20DNS%20uses%20a%20special,are%20encoded,%20one%20per%20byte.
 // '\x05hello\x03com\x00' => hello.com
 export function dnsNameNotationDecode(message: string) {
+    const buf = Buffer.from(message, 'utf-8');
     const labels = [];
-    while(message.length > 0) {
-        const length = message.charCodeAt(0);
-        if (length === 0 && message.length !== 1) {
+    let start = 0;
+    while(start < buf.length) {
+        const length = buf[start];
+        if (length === 0 && (buf.length - start) !== 1) {
             throw new Error('Invalid DNS name notation');
         }
         if (length === 0) {
             break;
         }
-        const buf = Buffer.from(message, 'utf-8');
-        const label = buf.subarray(1, length + 1).toString('utf-8');
+        
+        const label = buf.subarray(start + 1, start + length + 1).toString('utf-8');
         labels.push(label);
-        message = buf.subarray(length + 1).toString('utf-8');
+        start = start + length + 1;
     }
     return labels.join('.');
 }
