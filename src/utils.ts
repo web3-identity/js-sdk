@@ -39,9 +39,10 @@ export function dnsNameNotationDecode(message: string) {
         if (length === 0) {
             break;
         }
-        const label = message.slice(1, length + 1);
+        const buf = Buffer.from(message, 'utf-8');
+        const label = buf.subarray(1, length + 1).toString('utf-8');
         labels.push(label);
-        message = message.slice(length + 1);
+        message = buf.subarray(length + 1).toString('utf-8');
     }
     return labels.join('.');
 }
