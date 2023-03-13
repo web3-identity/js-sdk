@@ -5,7 +5,7 @@
 To use this SDK, `js-conflux-sdk` is also required.
 
 ```bash
-npm install @web3identity/web3ns js-conflux-sdk
+npm install @web3identity/web3ns js-conflux-sdk ethers@5.4.0
 ```
 
 ## How to use
